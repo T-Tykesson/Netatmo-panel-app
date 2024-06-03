@@ -1,0 +1,8 @@
+panel==1.4
+bokeh==3.4.1
+jinja2==3.0
+ipython-sql
+openpyxl
+folium
+psycopg2
+
