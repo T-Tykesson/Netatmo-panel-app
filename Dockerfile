@@ -13,9 +13,8 @@ RUN mkdir /.cache
 RUN chmod 777 /.cache
 
 # CMD should be at the end
-CMD ["panel", "serve", "/code/app.py", 
-     "--address", "0.0.0.0", 
-     "--port", "8080",  
-     "--allow-websocket-origin", "*", 
-     "--index", "app"
-     ]
+CMD panel serve /code/app.py \
+    --address 0.0.0.0 \
+    --port 8080 \
+    --allow-websocket-origin "*" \
+    --index app \
